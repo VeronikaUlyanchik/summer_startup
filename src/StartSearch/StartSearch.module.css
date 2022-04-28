@@ -1,0 +1,20 @@
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchLogo{
+    width: 64.17px;
+    height: 64.17px;
+    margin-bottom: 47px;
+}
+.text{
+    width: 210px;
+    height: 62px;
+    font-weight:400 ;
+    font-size: 22px;
+    line-height: 30.8px;
+    text-align: center;
+    color: #808080;
+}
