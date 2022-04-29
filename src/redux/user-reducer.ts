@@ -22,7 +22,7 @@ export type UserInfo = {
     received_events_url: string,
     type: string,
     site_admin: boolean,
-    name:string,
+    name: string,
     company: string,
     blog: string,
     location: string,
@@ -37,138 +37,130 @@ export type UserInfo = {
     created_at: string,
     updated_at: string
 }
-// type Repository = {
-//             "id": 1296269,
-//             "node_id": "MDEwOlJlcG9zaXRvcnkxMjk2MjY5",
-//             "name": "Hello-World",
-//             "full_name": "octocat/Hello-World",
-//             "owner": {
-//                 "login": "octocat",
-//                 "id": 1,
-//                 "node_id": "MDQ6VXNlcjE=",
-//                 "avatar_url": "https://github.com/images/error/octocat_happy.gif",
-//                 "gravatar_id": "",
-//                 "url": "https://api.github.com/users/octocat",
-//                 "html_url": "https://github.com/octocat",
-//                 "followers_url": "https://api.github.com/users/octocat/followers",
-//                 "following_url": "https://api.github.com/users/octocat/following{/other_user}",
-//                 "gists_url": "https://api.github.com/users/octocat/gists{/gist_id}",
-//                 "starred_url": "https://api.github.com/users/octocat/starred{/owner}{/repo}",
-//                 "subscriptions_url": "https://api.github.com/users/octocat/subscriptions",
-//                 "organizations_url": "https://api.github.com/users/octocat/orgs",
-//                 "repos_url": "https://api.github.com/users/octocat/repos",
-//                 "events_url": "https://api.github.com/users/octocat/events{/privacy}",
-//                 "received_events_url": "https://api.github.com/users/octocat/received_events",
-//                 "type": "User",
-//                 "site_admin": false
-//             },
-//             "private": false,
-//             "html_url": "https://github.com/octocat/Hello-World",
-//             "description": "This your first repo!",
-//             "fork": false,
-//             "url": "https://api.github.com/repos/octocat/Hello-World",
-//             "archive_url": "https://api.github.com/repos/octocat/Hello-World/{archive_format}{/ref}",
-//             "assignees_url": "https://api.github.com/repos/octocat/Hello-World/assignees{/user}",
-//             "blobs_url": "https://api.github.com/repos/octocat/Hello-World/git/blobs{/sha}",
-//             "branches_url": "https://api.github.com/repos/octocat/Hello-World/branches{/branch}",
-//             "collaborators_url": "https://api.github.com/repos/octocat/Hello-World/collaborators{/collaborator}",
-//             "comments_url": "https://api.github.com/repos/octocat/Hello-World/comments{/number}",
-//             "commits_url": "https://api.github.com/repos/octocat/Hello-World/commits{/sha}",
-//             "compare_url": "https://api.github.com/repos/octocat/Hello-World/compare/{base}...{head}",
-//             "contents_url": "https://api.github.com/repos/octocat/Hello-World/contents/{+path}",
-//             "contributors_url": "https://api.github.com/repos/octocat/Hello-World/contributors",
-//             "deployments_url": "https://api.github.com/repos/octocat/Hello-World/deployments",
-//             "downloads_url": "https://api.github.com/repos/octocat/Hello-World/downloads",
-//             "events_url": "https://api.github.com/repos/octocat/Hello-World/events",
-//             "forks_url": "https://api.github.com/repos/octocat/Hello-World/forks",
-//             "git_commits_url": "https://api.github.com/repos/octocat/Hello-World/git/commits{/sha}",
-//             "git_refs_url": "https://api.github.com/repos/octocat/Hello-World/git/refs{/sha}",
-//             "git_tags_url": "https://api.github.com/repos/octocat/Hello-World/git/tags{/sha}",
-//             "git_url": "git:github.com/octocat/Hello-World.git",
-//             "issue_comment_url": "https://api.github.com/repos/octocat/Hello-World/issues/comments{/number}",
-//             "issue_events_url": "https://api.github.com/repos/octocat/Hello-World/issues/events{/number}",
-//             "issues_url": "https://api.github.com/repos/octocat/Hello-World/issues{/number}",
-//             "keys_url": "https://api.github.com/repos/octocat/Hello-World/keys{/key_id}",
-//             "labels_url": "https://api.github.com/repos/octocat/Hello-World/labels{/name}",
-//             "languages_url": "https://api.github.com/repos/octocat/Hello-World/languages",
-//             "merges_url": "https://api.github.com/repos/octocat/Hello-World/merges",
-//             "milestones_url": "https://api.github.com/repos/octocat/Hello-World/milestones{/number}",
-//             "notifications_url": "https://api.github.com/repos/octocat/Hello-World/notifications{?since,all,participating}",
-//             "pulls_url": "https://api.github.com/repos/octocat/Hello-World/pulls{/number}",
-//             "releases_url": "https://api.github.com/repos/octocat/Hello-World/releases{/id}",
-//             "ssh_url": "git@github.com:octocat/Hello-World.git",
-//             "stargazers_url": "https://api.github.com/repos/octocat/Hello-World/stargazers",
-//             "statuses_url": "https://api.github.com/repos/octocat/Hello-World/statuses/{sha}",
-//             "subscribers_url": "https://api.github.com/repos/octocat/Hello-World/subscribers",
-//             "subscription_url": "https://api.github.com/repos/octocat/Hello-World/subscription",
-//             "tags_url": "https://api.github.com/repos/octocat/Hello-World/tags",
-//             "teams_url": "https://api.github.com/repos/octocat/Hello-World/teams",
-//             "trees_url": "https://api.github.com/repos/octocat/Hello-World/git/trees{/sha}",
-//             "clone_url": "https://github.com/octocat/Hello-World.git",
-//             "mirror_url": "git:git.example.com/octocat/Hello-World",
-//             "hooks_url": "https://api.github.com/repos/octocat/Hello-World/hooks",
-//             "svn_url": "https://svn.github.com/octocat/Hello-World",
-//             "homepage": "https://github.com",
-//             "language": null,
-//             "forks_count": 9,
-//             "stargazers_count": 80,
-//             "watchers_count": 80,
-//             "size": 108,
-//             "default_branch": "master",
-//             "open_issues_count": 0,
-//             "is_template": false,
-//             "topics": [
-//                 "octocat",
-//                 "atom",
-//                 "electron",
-//                 "api"
-//             ],
-//             "has_issues": true,
-//             "has_projects": true,
-//             "has_wiki": true,
-//             "has_pages": false,
-//             "has_downloads": true,
-//             "archived": false,
-//             "disabled": false,
-//             "visibility": "public",
-//             "pushed_at": "2011-01-26T19:06:43Z",
-//             "created_at": "2011-01-26T19:01:12Z",
-//             "updated_at": "2011-01-26T19:14:43Z",
-//             "permissions": {
-//                 "admin": false,
-//                 "push": false,
-//                 "pull": true
-//             },
-//             "template_repository": null
-// }
+export type RepositoryType = {
+    "id": number,
+    "node_id": string,
+    "name": string
+    "full_name": string
+    "owner": Partial<UserInfo>,
+    "private": boolean,
+    "html_url": string
+    "description": string
+    "fork": boolean,
+    "url": string
+    "archive_url": string
+    "assignees_url": string
+    "blobs_url": string
+    "branches_url": string
+    "collaborators_url": string
+    "comments_url": string
+    "commits_url": string
+    "compare_url": string
+    "contents_url": string
+    "contributors_url": string
+    "deployments_url": string
+    "downloads_url": string
+    "events_url": string
+    "forks_url": string
+    "git_commits_url": string
+    "git_refs_url": string
+    "git_tags_url": string
+    "git_url": string
+    "issue_comment_url": string
+    "issue_events_url": string
+    "issues_url": string
+    "keys_url": string
+    "labels_url": string
+    "languages_url": string
+    "merges_url": string
+    "milestones_url": string
+    "notifications_url": string
+    "pulls_url": string
+    "releases_url": string
+    "ssh_url": string
+    "stargazers_url": string
+    "statuses_url": string
+    "subscribers_url": string
+    "subscription_url": string
+    "tags_url": string
+    "teams_url": string
+    "trees_url": string
+    "clone_url": string
+    "mirror_url": string
+    "hooks_url": string
+    "svn_url": string
+    "homepage": string
+    "language": null | string,
+    "forks_count": number,
+    "stargazers_count": number,
+    "watchers_count": number,
+    "size": number,
+    "default_branch": string,
+    "open_issues_count": number,
+    "is_template": boolean,
+    "topics": string[]
+    "has_issues": boolean,
+    "has_projects": boolean,
+    "has_wiki": boolean,
+    "has_pages": boolean,
+    "has_downloads": boolean,
+    "archived": boolean,
+    "disabled": boolean,
+    "visibility": string,
+    "pushed_at": string
+    "created_at": string
+    "updated_at": string
+    "permissions": {
+        "admin": boolean,
+        "push": boolean,
+        "pull": boolean
+    },
+    "template_repository": null
+}
 
 const initialState = {
     user: null as null | UserInfo,
-    repos: null as null
+    repos: null as null | RepositoryType[]
 };
-type InitialStateType = typeof initialState;
+export type InitialStateType = typeof initialState;
 
 const userReducer = createSlice({
     name: 'user',
     initialState,
     reducers: {
-        getUserAC(state:InitialStateType, action: PayloadAction<UserInfo>) {
+        getUserAC(state: InitialStateType, action: PayloadAction<UserInfo>) {
             state.user = action.payload
-        }
+        },
+        getRepositoriesAC(state: InitialStateType, action: PayloadAction<RepositoryType[] | null>) {
+            state.repos = action.payload
+        },
     }
 })
 
-export const {getUserAC} = userReducer.actions;
+export const {getUserAC, getRepositoriesAC} = userReducer.actions;
 export default userReducer.reducer;
 
 
-export const getUserThunk = (username: string) => (dispatch: Dispatch) => {
+export const getUserThunk = (username: string) => (dispatch: Dispatch<any>) => {
     dispatch(setAppStatusAC('loading'))
     usersAPI.getUser(username).then((res) => {
         dispatch(getUserAC(res.data))
-        dispatch(setAppStatusAC('succeeded'))
-    })
-        .catch((error) => {
+        dispatch(getRepositoriesThunk(username))
+    }).then(() => dispatch(setAppStatusAC('succeeded')))
+        .catch(() => {
             dispatch(setAppStatusAC('failed'))
+        })
+};
+
+export const getRepositoriesThunk = (username: string) => (dispatch: Dispatch) => {
+    usersAPI.getUserRepositories(username).then((res) => {
+        if (res.data.length !== 0) {
+            dispatch(getRepositoriesAC(res.data))
+        } else {
+            dispatch(getRepositoriesAC(null))
+        }
     })
-}
+        .catch(() => {
+            dispatch(setAppStatusAC('failed'))
+        })
+};

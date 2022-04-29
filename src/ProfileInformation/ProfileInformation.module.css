@@ -1,7 +1,6 @@
 .container{
-    margin-top: 42px;
     padding-left: 56px;
-    height: 100vh;
+    height: 80vh;
     width: 490px;
     display: flex;
     justify-content: flex-start;

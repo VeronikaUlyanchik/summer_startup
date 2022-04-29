@@ -1,10 +1,7 @@
 import React, {useEffect} from 'react';
 import { useSelector } from 'react-redux';
-import { Routes } from 'react-router-dom';
 import './App.css';
 import {Header} from "./Header/Header";
-import {StartSearch} from "./StartSearch/StartSearch";
-import {UserNotFound} from "./UserNotFound/UserNotFound";
 import {AppRootStateType} from "./redux/store";
 import {FoundPage} from "./FoundPage/FoundPage";
 import { Loader } from './Loader/Loader';
@@ -23,7 +20,7 @@ function App() {
             {(appStatus === 'loading') && <Loader/>}
             {(appStatus !== 'failed' && (appStatus !== 'loading')) && <>{user
                 ? <FoundPage/>
-                : <EmptyRepositoriesList picture={search} text={'Start with searching a GitHub user'}/>}</>}
+                : <EmptyRepositoriesList picture={search} text={'Start with searching a GitHub user'} style={{'width': '64.17px', 'height':'64.17px'}}/>}</>}
         </div>
     );
 }
