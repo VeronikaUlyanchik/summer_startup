@@ -1,19 +1,22 @@
 .container{
-    height: 70vh;
     display: flex;
+    margin: 28px 0 95px 96px;
     flex-direction: column;
-    align-items: flex-end;
-    margin: auto;
+    width: 100%;
 }
 .itemsContainer{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
+.itemsContainer div{
+    width: 90%;
+}
 .title{
     font-size: 32px;
     font-weight: 600;
     line-height: 130%;
+    text-align: start;
 }
 .items{
     background: #FFFFFF;
@@ -21,31 +24,32 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
     padding: 24px 32px;
+    margin-right: 20px;
     margin-top: 24px;
-    width: 877px;
+    min-width: 100%;
     min-height: 90px;
     box-sizing: border-box;
     text-align: start;
 }
 .items a{
     text-decoration: none;
+    margin-bottom: 16px;
 }
 .user {
     margin-bottom: 42px;
 }
-.arrow {
-
-}
 .disabled div.arrow{
     display: none;
+    margin: 0 5px;
 }
 .disabled .disabledArrow{
     display: block;
+    margin: 0 5px;
 }
 .disabledArrow{
     display: none;
+    margin: 0 5px;
 }
 .pagination {
     display: flex;
@@ -54,7 +58,7 @@
     padding: 0px;
     list-style-type:none;
     position: relative;
-    width: 337px;
+    width: 200px;
     height: 25px;
     bottom: 5px;
 }
@@ -62,6 +66,9 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
 }
 .paginationContainer > div{
     margin-right: 10px;
@@ -102,4 +109,39 @@
     line-height: 30.8px;
     text-align: center;
     color: #808080;
+}
+@media all and (max-width: 960px){
+    .items{
+        padding: 15px 16px;
+        margin-top: 22px;
+    }
+    .description {
+        font-size: 14px;
+        line-height: 15px;
+    }
+    .title{
+        font-size: 28px;
+    }
+}
+@media all and (max-width: 720px){
+    .container{
+        margin: 20px 0 70px 20px;
+        width: 92%;
+    }
+}
+
+@media all and (max-width: 416px){
+
+    .paginationContainer > div{
+        margin-right: 5px;
+        min-width: 100px;
+    }
+    .page{
+        width: 20px;
+        height: 17px;
+    }
+    .pagination {
+        width: 158px;
+
+    }
 }

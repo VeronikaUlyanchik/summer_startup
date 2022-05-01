@@ -1,4 +1,7 @@
 .loader {
+    position: absolute;
+    top: 36%;
+    left: 42%;
     border: 26px solid #f3f3f3;
     border-top: 26px solid #0064EB;
     border-radius: 50%;
@@ -10,4 +13,31 @@
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+@media all and (max-width: 960px){
+    .loader {
+        border: 23px solid #f3f3f3;
+        border-top: 23px solid #0064EB;
+        width: 170px;
+        height: 170px;
+    }
+}
+@media all and (max-width: 720px){
+    .loader {
+        border: 20px solid #f3f3f3;
+        border-top: 20px solid #0064EB;
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media all and (max-width: 416px){
+
+    .loader {
+        left: 20%;
+        border: 25px solid #f3f3f3;
+        border-top: 25px solid #0064EB;
+        width: 100px;
+        height: 100px;
+    }
 }

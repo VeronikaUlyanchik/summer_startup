@@ -5,12 +5,10 @@
   font-weight: normal;
 }
 .App {
+  position: relative;
   text-align: center;
   min-height: 100vh;
   font-family: Inter;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   background-color: #E5E5E5;
 }
 

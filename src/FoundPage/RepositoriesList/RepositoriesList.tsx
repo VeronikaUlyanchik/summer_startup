@@ -40,7 +40,7 @@ export function RepositoriesList({repos}: RepositoriesListType) {
         setPageCount(Math.ceil(repos.length / itemsPerPage));
     }, [itemOffset, itemsPerPage, repos]);
 
-    const handlePageClick = (e: any) => {
+    const handlePageClick = (e:  { selected: number }) => {
         const newOffset = (e.selected * itemsPerPage) % repos.length;
         setItemOffset(newOffset);
     };
@@ -52,7 +52,7 @@ export function RepositoriesList({repos}: RepositoriesListType) {
                 {(currentItems !== null) && <Items currentItems={currentItems}/>}
             </div>
             <div className={style.paginationContainer}>
-                <div>{itemOffset > 4 ? <>{itemOffset+1}-{itemOffset+itemsPerPage} of {repos.length} items</>
+                <div>{repos.length > 4 ? <>{itemOffset+1}-{itemOffset+itemsPerPage} of {repos.length} items</>
                 :<> {itemOffset+1} of {repos.length} items </>} </div>
                 <ReactPaginate
                     breakLabel="..."

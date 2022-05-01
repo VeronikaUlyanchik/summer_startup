@@ -1,14 +1,13 @@
 .container{
-    height: 100vh;
+    height: 89vh;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
 }
-.user {
+.picture {
     margin-bottom: 42px;
 }
-
 .text{
     height: 62px;
     font-weight:400;
@@ -16,4 +15,15 @@
     line-height: 30.8px;
     text-align: center;
     color: #808080;
+}
+@media all and (max-width: 960px){
+    .text{
+        height: 56px;
+    }
+}
+
+@media all and (max-width: 416px){
+    .container{
+        height: 40vh;
+    }
 }

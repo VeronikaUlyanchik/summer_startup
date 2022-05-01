@@ -1,12 +1,12 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import style from './FoundPage.module.css';
-import {ProfileInformation} from "../ProfileInformation/ProfileInformation";
+import {ProfileInformation} from "./ProfileInformation/ProfileInformation";
 import {RepositoriesList} from './RepositoriesList/RepositoriesList';
-import {EmptyRepositoriesList} from './EmptyRepositoriesList/EmptyRepositoriesList';
 import emptyPic from '../assets/Empty.png';
 import {useSelector} from "react-redux";
 import {AppRootStateType} from "../redux/store";
 import {RepositoryType} from "../redux/user-reducer";
+import {InformationContainer} from "../InformationContainer/InformationContainer";
 
 
 export const FoundPage = () => {
@@ -17,7 +17,7 @@ export const FoundPage = () => {
             <ProfileInformation/>
             {
                 repos ? <RepositoriesList repos={repos}/>
-                    : <EmptyRepositoriesList picture={emptyPic} text={'Repository list is empty'}/>
+                    : <InformationContainer picture={emptyPic} text={'Repository list is empty'}/>
             }
 
 

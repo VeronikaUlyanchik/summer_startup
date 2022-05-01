@@ -1,4 +1,5 @@
-import axios from "axios";
+import axios, {AxiosResponse} from "axios";
+import {RepositoryType, UserInfo} from "./redux/user-reducer";
 
 const instance = axios.create({
     baseURL: "https://api.github.com/users",
@@ -9,9 +10,9 @@ const instance = axios.create({
 
 export const usersAPI = {
     getUser(username: string) {
-        return instance.get(`/${username}`)
+        return instance.get<any, AxiosResponse<UserInfo>>(`/${username}`)
     },
     getUserRepositories(username: string) {
-        return instance.get(`/${username}/repos`)
+        return instance.get<any, AxiosResponse<RepositoryType[]>>(`/${username}/repos`)
     }
 }
