@@ -15,7 +15,7 @@ const Items = ({currentItems}: ItemsProps) => {
             {currentItems &&
                 currentItems.map((item) => (
                     <div className={style.items}>
-                        <a href={item.html_url} target={"_blank"}>{item.name}</a>
+                        <a href={item.html_url} target="_blank" rel="noreferrer">{item.name}</a>
                         <div className={style.description}>{item.description ? item.description : ''}</div>
                     </div>
                 ))}

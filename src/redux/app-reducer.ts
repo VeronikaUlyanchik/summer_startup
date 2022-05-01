@@ -1,7 +1,4 @@
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
-import {Dispatch} from "redux";
-import {usersAPI} from "../api";
-import {UserInfo} from "../redux/user-reducer";
 
 const initialState: InitialAppStateType = {
     appStatus: 'idle'
